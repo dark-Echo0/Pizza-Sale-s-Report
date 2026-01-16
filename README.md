@@ -23,39 +23,39 @@ The client want to visualize various aspects of pizza sales data to gain insight
 
 ## Documentation of Workflow
 1. Using SQL Server, I created database called **Pizza_Sales_DB**. <br>
-![]() <br>
+![Create_DB](results/create_DB.png) <br>
 2. Next, I imported the .csv file of pizza_sales to the database. <br>
-![]() <br>
+![import_files](results/import_csv_files.png) <br>
 3. I create a Query as I followed from KPI's Requirement. <br>
 a. **Total Revenue** <br>
 ```sql
 SELECT CAST(SUM(total_price) AS DECIMAL(15,2)) AS Total_Revenue 
 FROM pizza_sales;
 ``` 
-![]() <br>
+![Total_Revenue](results/Total_Revenue.png) <br>
 b. **Average Order Value** <br>
 ```sql
 SELECT CAST(SUM(total_price) / COUNT(DISTINCT order_id) AS DECIMAL(15,2)) Average_Order_Value
 FROM pizza_sales;
 ```
-![]() <br>
+![](results/avg_total_value.png) <br>
 c. **Total Pizzas Sold** <br>
 ```sql
 SELECT SUM(quantity) AS Total_Pizza_Sold FROM pizza_sales;
 ```
-![]() <br>
-d. **Total Ortders**
+![](results/total_pizza_sold.png) <br>
+d. **Total Orders**
 ```sql
 SELECT COUNT(DISTINCT order_id) AS Total_Orders FROM pizza_sales;
 ```
-![]()
+![](results/total_orders.png)
 <br>
 e. **Average Pizzas Per Order** <br>
 ```sql
 SELECT CAST(CAST(SUM(quantity) AS DECIMAL(10,2)) / CAST(COUNT(DISTINCT order_id) AS DECIMAL(10,2)) AS DECIMAL(10,2))  AS Average_Pizza_per_Order
 FROM  pizza_sales;
 ```
-![]() <br>
+![](results/avg_pizza_per_order.png) <br>
 
 
 
