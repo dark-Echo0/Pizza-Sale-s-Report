@@ -65,7 +65,7 @@ COUNT(DISTINCT order_id) AS Total_Orders
 FROM pizza_sales
 GROUP BY DATENAME(DW, order_date);
 ```
-![]() <br>
+![](results/daily_trend_TO.png) <br>
 b. **Monthly Trend for Total Orders** <br>
 ```sql
 SELECT DATENAME(MONTH, order_date) AS order_day, 
@@ -74,7 +74,7 @@ FROM pizza_sales
 GROUP BY DATENAME(MONTH, order_date)
 ORDER BY Total_Orders DESC;
 ```
-![]()
+![](results/monthly_trend_TO.png)
 c. **Percentage of Sales by Pizza Category** <br>
 ```sql
 SELECT pizza_category, 
@@ -85,7 +85,7 @@ FROM pizza_sales
 WHERE MONTH(order_date) = 1
 GROUP BY pizza_category;
 ```
-![]() <br>
+![](results/pct_sales_category.png) <br>
 d. **Percentage of Sales by Pizza Size**
 ```sql
 SELECT pizza_size, 
@@ -97,7 +97,7 @@ WHERE DATEPART(QUARTER, order_date) = 1
 GROUP BY pizza_size
 ORDER BY Percent_Total DESC;
 ```
-![]() <br>
+![](results/pct_sales_size.png) <br>
 e. **Total Pizzas Sold by Category** This problem statement was querried in letter C **Percentage of Sales by Pizza Category** <br>
 f. **Top 5 best Sellers by Revenue, Total Quantity, and Total Orders**
 ```sql
@@ -107,7 +107,7 @@ FROM pizza_sales
 GROUP BY pizza_name
 ORDER BY Revenue DESC;
 ```
-![]() <br>
+![](results/top_total_revenue.png) <br>
 
 ```sql
 --Top 5 Total Quantity
@@ -117,7 +117,7 @@ FROM pizza_sales
 GROUP BY pizza_name
 ORDER BY Total_Quantity DESC;
 ```
-![]() <br>
+![](results/top_quantity.png) <br>
 
 ```sql
 --Top 5 Total Orders
@@ -126,9 +126,9 @@ FROM pizza_sales
 GROUP BY pizza_name
 ORDER BY Total_Orders DESC;
 ```
-![]() <br>
+![](results/top_total_orders.png) <br>
 
-g. ** Bottom 5 Worst Sellers by Revenue, Total Quantity and Total Orders**
+g. **Bottom 5 Worst Sellers by Revenue, Total Quantity and Total Orders**
 To get the bottom 5 of the total revenue, total quantity and total orders, just change the argument in ORDER BY from **DESC** to **ASC**.
 
 
