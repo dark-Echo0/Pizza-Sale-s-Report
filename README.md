@@ -108,7 +108,6 @@ GROUP BY pizza_name
 ORDER BY Revenue DESC;
 ```
 ![](results/top_total_revenue.png) <br>
-
 ```sql
 --Top 5 Total Quantity
 SELECT TOP 5 pizza_name, 
@@ -118,7 +117,6 @@ GROUP BY pizza_name
 ORDER BY Total_Quantity DESC;
 ```
 ![](results/top_quantity.png) <br>
-
 ```sql
 --Top 5 Total Orders
 SELECT TOP 5 pizza_name, COUNT(DISTINCT order_id) AS Total_Orders
@@ -127,7 +125,6 @@ GROUP BY pizza_name
 ORDER BY Total_Orders DESC;
 ```
 ![](results/top_total_orders.png) <br>
-
 g. **Bottom 5 Worst Sellers by Revenue, Total Quantity and Total Orders**
 To get the bottom 5 of the total revenue, total quantity and total orders, just change the argument in ORDER BY from **DESC** to **ASC**.
 
