@@ -129,6 +129,9 @@ g. **Bottom 5 Worst Sellers by Revenue, Total Quantity and Total Orders**
 To get the bottom 5 of the total revenue, total quantity and total orders, just change the argument in ORDER BY from **DESC** to **ASC**.
 
 ## Data Visualization using PowerBI
+**1. Import the data from SQL SERVER**
+**2. Data Cleaning** 
+**3. Transform Data Using Power Query** 
 
 
 
