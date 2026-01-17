@@ -1,6 +1,6 @@
 # Pizza-Sale-s-Report
 
-# Problem Statement From Client
+## Problem Statement From Client
 These project used a dataset from Data Tutorials - an instructor from Youtube.
 ## KPI's Requirement
 The Data Analyst need to analyze key indicators for pizza sales data to gain insights into business performance. <br>
@@ -127,6 +127,8 @@ ORDER BY Total_Orders DESC;
 ![](results/top_total_orders.png) <br>
 g. **Bottom 5 Worst Sellers by Revenue, Total Quantity and Total Orders**
 To get the bottom 5 of the total revenue, total quantity and total orders, just change the argument in ORDER BY from **DESC** to **ASC**.
+
+## Data Visualization using PowerBI
 
 
 
